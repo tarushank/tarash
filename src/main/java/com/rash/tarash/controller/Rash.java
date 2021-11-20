@@ -26,7 +26,8 @@ public class Rash {
                 properties.setProperty("name", "Empty string from property file");
             }
             System.out.println("Date from the prop file: " +properties.getProperty("name"));
-            return properties.getProperty("name");
+            String output = "<h1> "+properties.getProperty("name")+"</h1>";
+            return output;
         } catch (IOException e) {
             e.printStackTrace();
         }
